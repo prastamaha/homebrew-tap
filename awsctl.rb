@@ -5,11 +5,11 @@
 class Awsctl < Formula
   desc ""
   homepage "https://github.com/prastamaha/awsctl"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/prastamaha/awsctl/releases/download/v0.0.1/awsctl_0.0.1_darwin_all.tar.gz"
-    sha256 "f0a40350ad75a955f205fed551e2f0a1596192b133c4f06cfd364577570714d7"
+    url "https://github.com/prastamaha/awsctl/releases/download/v0.0.2/awsctl_0.0.2_darwin_all.tar.gz"
+    sha256 "41a5c9e74915e1fd4d8ee546c5d462c70a84582388d5ee9d8be1172ddba0189b"
 
     def install
       bin.install "awsctl"
@@ -19,8 +19,8 @@ class Awsctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prastamaha/awsctl/releases/download/v0.0.1/awsctl_0.0.1_linux_amd64.tar.gz"
-        sha256 "2143750cfef6ce42d9b31021ddadf135a47f638daab655a71226fef22f230bdf"
+        url "https://github.com/prastamaha/awsctl/releases/download/v0.0.2/awsctl_0.0.2_linux_amd64.tar.gz"
+        sha256 "b1273bf6da1bbf888983535ee84f7f5d16327258efa812bf2dbd1c99c81f73c4"
 
         def install
           bin.install "awsctl"
@@ -29,8 +29,8 @@ class Awsctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prastamaha/awsctl/releases/download/v0.0.1/awsctl_0.0.1_linux_arm64.tar.gz"
-        sha256 "95e64efcbc61a1ab82b8da47a4b8ce2a404b91ebdd1b1b70824d2560674de39a"
+        url "https://github.com/prastamaha/awsctl/releases/download/v0.0.2/awsctl_0.0.2_linux_arm64.tar.gz"
+        sha256 "85128eb22cdc29f0335a6cf2d14652625fbaa370bc071cca6f56b3aa7d48663f"
 
         def install
           bin.install "awsctl"
